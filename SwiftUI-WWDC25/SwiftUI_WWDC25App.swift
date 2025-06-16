@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_WWDC25App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NativeWebView()
         }
     }
 }

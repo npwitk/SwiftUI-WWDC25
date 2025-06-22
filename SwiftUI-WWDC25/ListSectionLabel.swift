@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ListSectionLabel: View {
+    let letters = ["A", "B", "C", "D", "E", "F", "G"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(letters, id: \.self) { letter in
+            Section(letter) {
+                ForEach(0..<10) { number in
+                    Text("Row \(number)")
+                }
+            }
+            .sectionIndexLabel(letter)
+        }
+//        .listSectionIndexVisibility(.hidden)
     }
 }
 

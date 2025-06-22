@@ -11,6 +11,13 @@ struct Miscellaneous: View {
     var body: some View {
         Label("Hello Planet!", systemImage: "globe")
             .labelIconToTitleSpacing(50)
+        
+        VStack {
+            Button("Example", systemImage: "plus") { }
+            Button("Example", systemImage: "envelope.front") { }
+        }
+        .font(.largeTitle)
+        .labelReservedIconWidth(50)
     }
 }
 

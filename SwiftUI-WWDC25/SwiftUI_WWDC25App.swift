@@ -13,5 +13,9 @@ struct SwiftUI_WWDC25App: App {
         WindowGroup {
             NativeWebView()
         }
+        
+        AssistiveAccess {
+            AssistiveAccessContentView()
+        }
     }
 }

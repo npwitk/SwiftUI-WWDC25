@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConcentricRectangle: View {
+struct ConcentricRectangleView: View {
     @State private var padding: CGFloat = 10
     
     var body: some View {
@@ -33,7 +33,7 @@ struct ConcentricRectangle: View {
     }
 }
 
-struct ConcentricRectangle2: View {
+struct ConcentricRectangleView2: View {
     @State private var padding: CGFloat = 10
     
     var body: some View {
@@ -65,9 +65,9 @@ struct ConcentricRectangle2: View {
 }
 
 #Preview {
-    ConcentricRectangle()
+    ConcentricRectangleView()
 }
 
 #Preview {
-    ConcentricRectangle2()
+    ConcentricRectangleView2()
 }

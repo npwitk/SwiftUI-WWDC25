@@ -23,8 +23,8 @@ struct GlassEffectContainerView: View {
                     HStack(spacing: 20) {
                         ForEach(symbolSet.indices, id: \.self) { item in
                             Image(systemName: symbolSet[item])
-                                .frame(width: 80, height: 80)
-                                .font(.system(size: 36))
+                                .frame(width: 60, height: 60)
+                                .font(.system(size: 24))
                                 .glassEffect()
                                 .glassEffectUnion(id: item < 2 ? "1" : "2", namespace: namespace)
                         }
@@ -34,14 +34,14 @@ struct GlassEffectContainerView: View {
                 GlassEffectContainer(spacing: 40) {
                     HStack(spacing: 40) {
                         Image(systemName: "scribble.variable")
-                            .frame(width: 80, height: 80)
-                            .font(.system(size: 36))
+                            .frame(width: 60, height: 60)
+                            .font(.system(size: 24))
                             .glassEffect(.regular.interactive())
                             .offset(x: 20)
 
                         Image(systemName: "eraser.fill")
-                            .frame(width: 80, height: 80)
-                            .font(.system(size: 36))
+                            .frame(width: 60, height: 60)
+                            .font(.system(size: 24))
                             .glassEffect(.regular.interactive())
                             .offset(x: -20)
                     }

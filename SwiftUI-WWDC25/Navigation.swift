@@ -9,14 +9,14 @@ import SwiftUI
 
 struct Navigation: View {
     var body: some View {
-        NavigationStack {
-           Text("SwiftUI")
-               .navigationTitle("Welcome")
-               .navigationSubtitle("Select an option")
-       }
+        Text("SwiftUI")
+            .navigationTitle("Welcome")
+            .navigationSubtitle("Select an option")
     }
 }
 
 #Preview {
-    Navigation()
+    NavigationStack {
+        Navigation()
+    }
 }

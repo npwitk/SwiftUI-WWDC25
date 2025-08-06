@@ -92,7 +92,7 @@ struct FoundationModels: View {
             let response = session.streamResponse(to: prompt)
             
             for try await chunk in response {
-                    self.answer = chunk
+                self.answer = chunk.content
             }
         } catch {
             await MainActor.run {
